@@ -13,7 +13,7 @@ enum EmployeesViewControllerFactory {
         let dataSource = EmployeesViewModelDataSource()
         let curencyFormatter = CurrencyFormatter()
         
-        let viewController = EmployeesViewController()
+        let viewController = EmployeesViewControllerImpl()
         let viewModel = EmployeesViewModelImpl(dataSource: dataSource,
                                                curencyFormatter: curencyFormatter)
         

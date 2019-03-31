@@ -8,5 +8,5 @@
 
 protocol EmployeesViewModel {
     func didSetupView()
-    func sortEmployees()
+    func didPressSortEmployees()
 }

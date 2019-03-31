@@ -19,7 +19,8 @@ struct Employee {
         self.salary = Constants.startingSalary
     }
 
-    // ToDo: - Comment
+    // ToDo: - It's not a high performance decision,
+    // to use formatters in models.
 //    func formattedSalary() -> String {
 //        let formatter = CurrencyFormatter()
 //        return formatter.string(with: salary)

@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		EC723206224D54FD0013C134 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC723205224D54FD0013C134 /* AppDelegate.swift */; };
-		EC723208224D54FD0013C134 /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC723207224D54FD0013C134 /* EmployeesViewController.swift */; };
+		EC723208224D54FD0013C134 /* EmployeesViewControllerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC723207224D54FD0013C134 /* EmployeesViewControllerImpl.swift */; };
 		EC72320D224D55000013C134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC72320C224D55000013C134 /* Assets.xcassets */; };
 		EC723210224D55000013C134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC72320E224D55000013C134 /* LaunchScreen.storyboard */; };
 		EC72321B224D55000013C134 /* EmployeesSampleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72321A224D55000013C134 /* EmployeesSampleProjectTests.swift */; };
 		EC72322C224D55DF0013C134 /* EmployeesViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72322B224D55DF0013C134 /* EmployeesViewModelImpl.swift */; };
 		EC723231224D56240013C134 /* EmployeesViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC723230224D56240013C134 /* EmployeesViewControllerFactory.swift */; };
 		EC723233224D57070013C134 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC723232224D57070013C134 /* Space.swift */; };
-		EC723235224D59330013C134 /* EmployeesViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC723234224D59330013C134 /* EmployeesViewModelDelegate.swift */; };
+		EC723235224D59330013C134 /* EmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC723234224D59330013C134 /* EmployeesViewController.swift */; };
 		EC723237224D59450013C134 /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC723236224D59450013C134 /* EmployeesViewModel.swift */; };
 		EC723239224D59C30013C134 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC723238224D59C30013C134 /* EmployeeTableViewCell.swift */; };
 		EC72323B224D5CC50013C134 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC72323A224D5CC50013C134 /* Employee.swift */; };
@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		EC723202224D54FD0013C134 /* EmployeesSampleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeesSampleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC723205224D54FD0013C134 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC723207224D54FD0013C134 /* EmployeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
+		EC723207224D54FD0013C134 /* EmployeesViewControllerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewControllerImpl.swift; sourceTree = "<group>"; };
 		EC72320C224D55000013C134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC72320F224D55000013C134 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC723211224D55000013C134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		EC72322B224D55DF0013C134 /* EmployeesViewModelImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModelImpl.swift; sourceTree = "<group>"; };
 		EC723230224D56240013C134 /* EmployeesViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewControllerFactory.swift; sourceTree = "<group>"; };
 		EC723232224D57070013C134 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
-		EC723234224D59330013C134 /* EmployeesViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModelDelegate.swift; sourceTree = "<group>"; };
+		EC723234224D59330013C134 /* EmployeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewController.swift; sourceTree = "<group>"; };
 		EC723236224D59450013C134 /* EmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
 		EC723238224D59C30013C134 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
 		EC72323A224D5CC50013C134 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
@@ -189,7 +189,6 @@
 			isa = PBXGroup;
 			children = (
 				EC723236224D59450013C134 /* EmployeesViewModel.swift */,
-				EC723234224D59330013C134 /* EmployeesViewModelDelegate.swift */,
 				EC72322B224D55DF0013C134 /* EmployeesViewModelImpl.swift */,
 			);
 			path = ViewModel;
@@ -198,7 +197,8 @@
 		EC72322F224D56000013C134 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EC723207224D54FD0013C134 /* EmployeesViewController.swift */,
+				EC723234224D59330013C134 /* EmployeesViewController.swift */,
+				EC723207224D54FD0013C134 /* EmployeesViewControllerImpl.swift */,
 				EC723238224D59C30013C134 /* EmployeeTableViewCell.swift */,
 				EC72323C224D6B270013C134 /* EmployeeTableLoadingView.swift */,
 			);
@@ -323,7 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC723235224D59330013C134 /* EmployeesViewModelDelegate.swift in Sources */,
+				EC723235224D59330013C134 /* EmployeesViewController.swift in Sources */,
 				EC72323B224D5CC50013C134 /* Employee.swift in Sources */,
 				EC723244224E87B90013C134 /* EmployeeDirectoryImpl.swift in Sources */,
 				EC72324A224F86330013C134 /* EmployeeCellModel.swift in Sources */,
@@ -335,7 +335,7 @@
 				EC723231224D56240013C134 /* EmployeesViewControllerFactory.swift in Sources */,
 				EC723237224D59450013C134 /* EmployeesViewModel.swift in Sources */,
 				EC72323F224E86EA0013C134 /* EmployeeDirectory.swift in Sources */,
-				EC723208224D54FD0013C134 /* EmployeesViewController.swift in Sources */,
+				EC723208224D54FD0013C134 /* EmployeesViewControllerImpl.swift in Sources */,
 				EC723206224D54FD0013C134 /* AppDelegate.swift in Sources */,
 				EC72322C224D55DF0013C134 /* EmployeesViewModelImpl.swift in Sources */,
 				EC723241224E87120013C134 /* Constants.swift in Sources */,

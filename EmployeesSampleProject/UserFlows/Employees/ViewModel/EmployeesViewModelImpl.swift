@@ -9,7 +9,7 @@
 import Foundation
 
 final class EmployeesViewModelImpl {
-    weak var viewController: EmployeesViewModelDelegate?
+    weak var viewController: EmployeesViewController?
     
     private let dataSource: EmployeesViewModelDataSource
     private let curencyFormatter: CurrencyFormatter
@@ -60,7 +60,7 @@ extension EmployeesViewModelImpl: EmployeesViewModel {
         viewController?.showLoadingAnimation()
     }
     
-    func sortEmployees() {
+    func didPressSortEmployees() {
         DispatchQueue.global(qos: .userInitiated).async { [weak self] in
             guard let self = self, let employees = self.dataSource.getEmployees() else { return }
             let sortedEmployees = employees.sorted { $0.name < $1.name }
